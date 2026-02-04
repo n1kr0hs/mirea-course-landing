@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build:css": "npx @tailwindcss/cli -i ./styles.css -o ./out-styles.css",
+    "dev": "npx serve -l 3000"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "tailwindcss": "^4.1.18"
