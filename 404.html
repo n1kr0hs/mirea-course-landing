@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -8,19 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    .fade-in { animation: fadeIn 0.6s ease-out; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-  </style>
 </head>
-<body class="
-  min-h-screen         
-  m-0                 
-  flex flex-col        
-  antialiased
-  text-stone-800
-  bg-stone-50
-">
+<body class="antialiased text-stone-800 bg-stone-50 layout-page">
   <header class="bg-white border-b border-stone-200 shadow-sm">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -36,7 +25,8 @@
     </div>
   </header>
 
-  <main class="page-404-main flex-1 flex flex-col items-center justify-center px-4 py-16 md:py-20">    <div class="text-center max-w-lg fade-in">
+  <main class="page-404-main">
+    <div class="text-center max-w-lg fade-in">
       <p class="text-6xl sm:text-8xl font-bold text-emerald-500/80">404</p>
       <h1 class="mt-4 text-2xl sm:text-3xl font-bold text-stone-900">Страница не найдена</h1>
       <p class="mt-2 text-stone-600">Возможно, вы перешли по устаревшей ссылке или страница была перемещена.</p>
