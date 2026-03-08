@@ -1,4 +1,3 @@
-// validation.js
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   if (!form) return;
@@ -6,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Сбрасываем предыдущие ошибки
     document.querySelectorAll(".border-red-500").forEach((el) => {
       el.classList.remove("border-red-500");
     });
@@ -14,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let isValid = true;
 
-    // 1. Проверка имени (не пустое, минимум 2 слова для ФИО-подобного)
     const name = document.getElementById("name");
     const nameValue = name.value.trim();
     if (nameValue === "") {
@@ -28,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    // 2. Проверка email (не пустой, базовый формат)
     const email = document.getElementById("email");
     const emailValue = email.value.trim();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -40,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // 3. Проверка темы (выбрана)
     const subject = document.getElementById("subject");
     const subjectValue = subject.value;
     if (subjectValue === "") {
@@ -48,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // 4. Проверка сообщения (не пустое)
     const message = document.getElementById("message");
     const messageValue = message.value.trim();
     if (messageValue === "") {
@@ -56,14 +50,12 @@ document.addEventListener("DOMContentLoaded", function () {
       isValid = false;
     }
 
-    // 5. Проверка согласия (отмечено)
     const consent = document.getElementById("consent");
     if (!consent.checked) {
       showError(consent, "Необходимо согласиться на обработку данных");
       isValid = false;
     }
 
-    // Если всё корректно - диспатчим событие
     if (isValid) {
       const formData = {
         name: nameValue,
@@ -78,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Функция показа ошибки
   function showError(input, message) {
     input.classList.add("border-red-500");
     const error = document.createElement("p");
@@ -87,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
     input.parentNode.appendChild(error);
   }
 
-  // Сброс ошибки при вводе
   document.querySelectorAll("input, select, textarea").forEach((input) => {
     input.addEventListener("input", function () {
       this.classList.remove("border-red-500");
