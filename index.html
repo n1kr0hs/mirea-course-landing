@@ -1,179 +1,410 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Локаль — Маркетплейс продуктов от местных производителей</title>
-  <link href="./out-styles.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="antialiased text-stone-800 bg-stone-50 page-home">
-  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 md:h-18">
-        <a href="index.html" class="flex items-center gap-2" aria-label="Локаль — на главную">
-          <span class="text-2xl font-bold text-emerald-600">Локаль</span>
-        </a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="nav-link text-emerald-600 font-semibold">Главная</a>
-          <a href="contacts.html" class="nav-link text-stone-600 hover:text-emerald-600 font-medium transition-colors">Контакты / Отзывы</a>
-          <a href="faq.html" class="nav-link text-stone-600 hover:text-emerald-600 font-medium transition-colors">FAQ</a>
-        </nav>
-        <a href="index.html#cta" class="rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700 transition-colors">
-          Каталог
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section id="hero" class="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-amber-50/50"></div>
-      <div class="container relative mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900">
-            Маркетплейс локальных продуктов
-          </h1>
-          <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
-            Ищем, выбираем и покупаем товары у местных производителей, фермеров и малого бизнеса. Свежее — рядом с вами.
-          </p>
-          <div class="mt-10 flex flex-wrap gap-4">
-            <a href="#cta" id="cta" class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all hover:shadow-xl">
-              Найти продукты
-            </a>
-            <a href="#about" class="inline-flex items-center justify-center rounded-xl border-2 border-stone-300 px-8 py-4 text-base font-semibold text-stone-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors">
-              Узнать больше
-            </a>
-          </div>
-        </div>
-        <div class="mt-16 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-4 text-white flex flex-wrap items-center justify-between gap-4 shadow-lg">
-          <span class="font-semibold">Скидка 10% на первый заказ у новых продавцов</span>
-          <a href="#cta" class="underline font-medium hover:no-underline">Получить скидку →</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="py-16 md:py-24 bg-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Локаль — Маркетплейс продуктов от местных производителей</title>
+    <link href="./out-styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased text-stone-800 bg-stone-50 page-home">
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-200 shadow-sm"
+    >
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div>
-            <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">О проекте</h2>
-            <p class="mt-6 text-stone-600 leading-relaxed">
-              <strong>Локаль</strong> — это веб-платформа, которая соединяет покупателей с местными производителями. Мы помогаем фермерам и малому бизнесу выходить на аудиторию, а вам — находить свежие продукты без посредников.
+        <div class="flex items-center justify-between h-16 md:h-18">
+          <a
+            href="index.html"
+            class="flex items-center gap-2"
+            aria-label="Локаль — на главную"
+          >
+            <span class="text-2xl font-bold text-emerald-600">Локаль</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-8">
+            <a href="index.html" class="nav-link text-emerald-600 font-semibold"
+              >Главная</a
+            >
+            <a
+              href="contacts.html"
+              class="nav-link text-stone-600 hover:text-emerald-600 font-medium transition-colors"
+              >Контакты / Отзывы</a
+            >
+            <a
+              href="faq.html"
+              class="nav-link text-stone-600 hover:text-emerald-600 font-medium transition-colors"
+              >FAQ</a
+            >
+          </nav>
+          <a
+            href="index.html#cta"
+            class="rounded-lg bg-emerald-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-700 transition-colors"
+          >
+            Каталог
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        id="hero"
+        class="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-amber-50/50"
+        ></div>
+        <div class="container relative mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900"
+            >
+              Маркетплейс локальных продуктов
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-stone-600 leading-relaxed">
+              Ищем, выбираем и покупаем товары у местных производителей,
+              фермеров и малого бизнеса. Свежее — рядом с вами.
             </p>
-            <p class="mt-4 text-stone-600 leading-relaxed">
-              Выбирайте овощи, молочные продукты, мёд, выпечку и товары ручной работы от проверенных продавцов из вашего региона. Удобный поиск, честные отзывы и быстрая доставка или самовывоз.
-            </p>
-            <ul class="mt-8 space-y-3">
-              <li class="flex items-center gap-3 text-stone-700">
-                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold">✓</span>
-                Прямые поставки от производителей
-              </li>
-              <li class="flex items-center gap-3 text-stone-700">
-                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold">✓</span>
-                Поддержка местной экономики
-              </li>
-              <li class="flex items-center gap-3 text-stone-700">
-                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold">✓</span>
-                Честные цены и прозрачность
-              </li>
-            </ul>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#cta"
+                id="cta"
+                class="inline-flex items-center justify-center rounded-xl bg-emerald-600 px-8 py-4 text-base font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all hover:shadow-xl"
+              >
+                Найти продукты
+              </a>
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center rounded-xl border-2 border-stone-300 px-8 py-4 text-base font-semibold text-stone-700 hover:border-emerald-500 hover:text-emerald-700 transition-colors"
+              >
+                Узнать больше
+              </a>
+            </div>
           </div>
-          <div class="relative">
-            <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center overflow-hidden shadow-xl">
-              <div class="text-center p-8">
-                <svg class="mx-auto h-24 w-24 text-emerald-400/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V3.935M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="mt-4 text-stone-500 font-medium">Ваш регион — ваши продукты</p>
+          <div
+            class="mt-16 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 px-6 py-4 text-white flex flex-wrap items-center justify-between gap-4 shadow-lg"
+          >
+            <span class="font-semibold"
+              >Скидка 10% на первый заказ у новых продавцов</span
+            >
+            <a href="#cta" class="underline font-medium hover:no-underline"
+              >Получить скидку →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <h2 class="text-3xl sm:text-4xl font-bold text-stone-900">
+                О проекте
+              </h2>
+              <p class="mt-6 text-stone-600 leading-relaxed">
+                <strong>Локаль</strong> — это веб-платформа, которая соединяет
+                покупателей с местными производителями. Мы помогаем фермерам и
+                малому бизнесу выходить на аудиторию, а вам — находить свежие
+                продукты без посредников.
+              </p>
+              <p class="mt-4 text-stone-600 leading-relaxed">
+                Выбирайте овощи, молочные продукты, мёд, выпечку и товары ручной
+                работы от проверенных продавцов из вашего региона. Удобный
+                поиск, честные отзывы и быстрая доставка или самовывоз.
+              </p>
+              <ul class="mt-8 space-y-3">
+                <li class="flex items-center gap-3 text-stone-700">
+                  <span
+                    class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold"
+                    >✓</span
+                  >
+                  Прямые поставки от производителей
+                </li>
+                <li class="flex items-center gap-3 text-stone-700">
+                  <span
+                    class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold"
+                    >✓</span
+                  >
+                  Поддержка местной экономики
+                </li>
+                <li class="flex items-center gap-3 text-stone-700">
+                  <span
+                    class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 font-semibold"
+                    >✓</span
+                  >
+                  Честные цены и прозрачность
+                </li>
+              </ul>
+            </div>
+            <div class="relative">
+              <div
+                class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-emerald-100 to-teal-100 flex items-center justify-center overflow-hidden shadow-xl"
+              >
+                <div class="text-center p-8">
+                  <svg
+                    class="mx-auto h-24 w-24 text-emerald-400/80"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0h.5a2.5 2.5 0 002.5-2.5V3.935M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <p class="mt-4 text-stone-500 font-medium">
+                    Ваш регион — ваши продукты
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="features" class="py-16 md:py-24 bg-stone-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 text-center">Почему выбирают нас</h2>
-        <p class="mt-4 text-stone-600 text-center max-w-2xl mx-auto">Удобный поиск, честные продавцы и забота о местных производителях.</p>
-        <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          <article class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-            </div>
-            <h3 class="mt-4 text-lg font-semibold text-stone-900">Удобный поиск</h3>
-            <p class="mt-2 text-stone-600 text-sm">Фильтры по категориям, региону и способу получения. Находите нужное за минуты.</p>
-          </article>
-          <article class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-600">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
-            </div>
-            <h3 class="mt-4 text-lg font-semibold text-stone-900">Свежие продукты</h3>
-            <p class="mt-2 text-stone-600 text-sm">Товары от фермеров и производителей без длинной цепочки перекупщиков.</p>
-          </article>
-          <article class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 text-teal-600">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-            </div>
-            <h3 class="mt-4 text-lg font-semibold text-stone-900">Поддержка местных</h3>
-            <p class="mt-2 text-stone-600 text-sm">Покупки остаются в вашем регионе и помогают развивать местный бизнес.</p>
-          </article>
-          <article class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all">
-            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600">
-              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1h-1m4-1V6a1 1 0 011-1h2a1 1 0 011 1v10a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M7 6v6m4-6v6m4-6v6m4-6v6" /></svg>
-            </div>
-            <h3 class="mt-4 text-lg font-semibold text-stone-900">Доставка и самовывоз</h3>
-            <p class="mt-2 text-stone-600 text-sm">Выбирайте удобный способ получения: курьером или заберите сами.</p>
-          </article>
+      <section id="features" class="py-16 md:py-24 bg-stone-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl sm:text-4xl font-bold text-stone-900 text-center">
+            Почему выбирают нас
+          </h2>
+          <p class="mt-4 text-stone-600 text-center max-w-2xl mx-auto">
+            Удобный поиск, честные продавцы и забота о местных производителях.
+          </p>
+          <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <article
+              class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-stone-900">
+                Удобный поиск
+              </h3>
+              <p class="mt-2 text-stone-600 text-sm">
+                Фильтры по категориям, региону и способу получения. Находите
+                нужное за минуты.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-amber-600"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-stone-900">
+                Свежие продукты
+              </h3>
+              <p class="mt-2 text-stone-600 text-sm">
+                Товары от фермеров и производителей без длинной цепочки
+                перекупщиков.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-100 text-teal-600"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-stone-900">
+                Поддержка местных
+              </h3>
+              <p class="mt-2 text-stone-600 text-sm">
+                Покупки остаются в вашем регионе и помогают развивать местный
+                бизнес.
+              </p>
+            </article>
+            <article
+              class="rounded-2xl bg-white p-6 shadow-md border border-stone-100 hover:shadow-lg hover:border-emerald-100 transition-all"
+            >
+              <div
+                class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-emerald-600"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1h-1m4-1V6a1 1 0 011-1h2a1 1 0 011 1v10a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M7 6v6m4-6v6m4-6v6m4-6v6"
+                  />
+                </svg>
+              </div>
+              <h3 class="mt-4 text-lg font-semibold text-stone-900">
+                Доставка и самовывоз
+              </h3>
+              <p class="mt-2 text-stone-600 text-sm">
+                Выбирайте удобный способ получения: курьером или заберите сами.
+              </p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer id="contacts" class="bg-stone-900 text-stone-300 py-12 md:py-16">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          <div>
-            <span class="text-xl font-bold text-white">Локаль</span>
-            <p class="mt-3 text-sm">Маркетплейс продуктов от местных производителей и фермеров.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-white">Контакты</h4>
-            <ul class="mt-3 space-y-2 text-sm">
-              <li><a href="mailto:hello@local-market.ru" class="hover:text-emerald-400 transition-colors">hello@local-market.ru</a></li>
-              <li>+7 (495) 123-45-67</li>
-              <li>Москва, ул. Примерная, 1</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold text-white">Навигация</h4>
-            <ul class="mt-3 space-y-2 text-sm">
-              <li><a href="index.html" class="hover:text-emerald-400 transition-colors">Главная</a></li>
-              <li><a href="index.html#about" class="hover:text-emerald-400 transition-colors">О проекте</a></li>
-              <li><a href="index.html#features" class="hover:text-emerald-400 transition-colors">Преимущества</a></li>
-              <li><a href="contacts.html" class="hover:text-emerald-400 transition-colors">Контакты / Отзывы</a></li>
-              <li><a href="faq.html" class="hover:text-emerald-400 transition-colors">FAQ</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold text-white">Соцсети</h4>
-            <div class="mt-3 flex gap-4">
-              <a href="https://t.me/local_market" class="text-stone-400 hover:text-emerald-400 transition-colors" aria-label="Telegram">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
-              </a>
-              <a href="https://vk.com/local_market" class="text-stone-400 hover:text-emerald-400 transition-colors" aria-label="ВКонтакте">
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"/></svg>
-              </a>
+      <footer id="contacts" class="bg-stone-900 text-stone-300 py-12 md:py-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+            <div>
+              <span class="text-xl font-bold text-white">Локаль</span>
+              <p class="mt-3 text-sm">
+                Маркетплейс продуктов от местных производителей и фермеров.
+              </p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Контакты</h4>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li>
+                  <a
+                    href="mailto:hello@local-market.ru"
+                    class="hover:text-emerald-400 transition-colors"
+                    >hello@local-market.ru</a
+                  >
+                </li>
+                <li>+7 (495) 123-45-67</li>
+                <li>Москва, ул. Примерная, 1</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Навигация</h4>
+              <ul class="mt-3 space-y-2 text-sm">
+                <li>
+                  <a
+                    href="index.html"
+                    class="hover:text-emerald-400 transition-colors"
+                    >Главная</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#about"
+                    class="hover:text-emerald-400 transition-colors"
+                    >О проекте</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#features"
+                    class="hover:text-emerald-400 transition-colors"
+                    >Преимущества</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contacts.html"
+                    class="hover:text-emerald-400 transition-colors"
+                    >Контакты / Отзывы</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="faq.html"
+                    class="hover:text-emerald-400 transition-colors"
+                    >FAQ</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-white">Соцсети</h4>
+              <div class="mt-3 flex gap-4">
+                <a
+                  href="https://t.me/local_market"
+                  class="text-stone-400 hover:text-emerald-400 transition-colors"
+                  aria-label="Telegram"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://vk.com/local_market"
+                  class="text-stone-400 hover:text-emerald-400 transition-colors"
+                  aria-label="ВКонтакте"
+                >
+                  <svg
+                    class="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.049.17.49-.085.744-.576.744z"
+                    />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
+          <div
+            class="mt-12 pt-8 border-t border-stone-700 text-center text-sm text-stone-500"
+          >
+            © 2026 Локаль. Маркетплейс локальных продуктов.
+          </div>
         </div>
-        <div class="mt-12 pt-8 border-t border-stone-700 text-center text-sm text-stone-500">
-          © 2026 Локаль. Маркетплейс локальных продуктов.
-        </div>
-      </div>
-    </footer>
-  </main>
-</body>
+      </footer>
+    </main>
+  </body>
 </html>
